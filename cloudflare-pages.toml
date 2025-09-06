@@ -1,0 +1,7 @@
+[build]
+command = "pnpm run build"
+publish = "./build/client"
+
+[build.environment_variables]
+NODE_VERSION = "20.15.1"
+PNPM_VERSION = "9.4.0"

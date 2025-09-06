@@ -17,10 +17,12 @@
     "start": "bindings=$(./bindings.sh) && wrangler pages dev ./build/client $bindings",
     "typecheck": "tsc",
     "typegen": "wrangler types",
-    "preview": "pnpm run build && pnpm run start"
+    "preview": "pnpm run build && pnpm run start",
+    "postinstall": "echo 'Dependencies installed successfully'"
   },
   "engines": {
-    "node": ">=18.18.0"
+    "node": ">=20.15.1",
+    "pnpm": ">=9.4.0"
   },
   "dependencies": {
     "@ai-sdk/anthropic": "^0.0.39",
