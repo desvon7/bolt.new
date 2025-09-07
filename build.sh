@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-# Force Node.js version to 20.19.0
-export NODE_VERSION=20.19.0
+# Force Node.js version to 18.17.1
+export NODE_VERSION=18.17.1
 export PNPM_VERSION=9.4.0
 
 echo "=== Cloudflare Pages Build Script ==="
@@ -28,7 +28,7 @@ echo "Current pnpm version: $(pnpm --version)"
 
 # Check if Node.js version is compatible
 NODE_CURRENT=$(node --version | cut -d'v' -f2)
-REQUIRED_VERSION="20.19.0"
+REQUIRED_VERSION="18.17.1"
 
 if [ "$(printf '%s\n' "$REQUIRED_VERSION" "$NODE_CURRENT" | sort -V | head -n1)" != "$REQUIRED_VERSION" ]; then
     echo "WARNING: Node.js version $NODE_CURRENT may not be compatible with required $REQUIRED_VERSION"

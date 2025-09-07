@@ -21,6 +21,10 @@
     "preview": "pnpm run build && pnpm run start",
     "postinstall": "echo 'Dependencies installed successfully'"
   },
+  "engines": {
+    "node": ">=18.17.1",
+    "pnpm": ">=9.4.0"
+  },
   "dependencies": {
     "@ai-sdk/anthropic": "^0.0.39",
     "@codemirror/autocomplete": "^6.17.0",
