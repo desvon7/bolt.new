@@ -5,7 +5,7 @@
 This project is configured to deploy to Cloudflare Pages with the following specifications:
 
 ### Node.js Version
-- **Required**: Node.js 20.15.1 or higher
+- **Required**: Node.js 20.19.0 or higher
 - **Specified in**: `.nvmrc`, `.node-version`, and `package.json` engines
 
 ### Package Manager
