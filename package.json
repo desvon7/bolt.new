@@ -9,6 +9,7 @@
   "scripts": {
     "deploy": "pnpm run build && wrangler pages deploy",
     "build": "remix vite:build",
+    "build:cloudflare": "NODE_VERSION=20.19.0 PNPM_VERSION=9.4.0 ./build.sh",
     "dev": "remix vite:dev",
     "test": "vitest --run",
     "test:watch": "vitest",
